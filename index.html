@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="LunchApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <titl>Coursera Assignment 1</title>
+  </head>
+
+  <body>
+    <div ng-controller="LunchController">
+      <h1>First Coursera Assignment</h1>
+      <h3>Please enter your lunch</h3>
+      <input type="text" ng-model="lunchItem"></input>
+      <br/>
+      <p>(Please note, empty item will be discarded...)</p>
+      <br/>
+      <button ng-click="LunchType()">Check If Too Much</button>
+      <br/>
+      <div><h3>Your lunch looks like: {{ResultMessage}}</h3> </div>
+    </div>
+  </body>
+</html>
